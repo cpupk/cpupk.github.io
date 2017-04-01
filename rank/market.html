@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>Hardware Market Share Observation</title>
+<meta name="description" content="The latest hardware market brand share, including CPU market share, graphics market share, hard disk market share, smart phone market" />
+<meta name="keywords" content="cpupk, pk, CPU share, GPU market share, mobile phone market share" /> 
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/table.min.js"></script>
+<script type="text/javascript" src="../js/slide.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/flot/0.8.3/jquery.flot.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/flot/0.8.3/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="excanvas.min.js"></script>
+</head>
+<body>
+<div id="topbar">
+<div class="wrapper-box clearfix">
+		<div class="left-box"><a href="../index.html" class="logo-box"><span class="q-logo">CPUPK.com</span></a></div>
+		<div class="center-box"><ul class="q-menubox"><li class="q-menuitem"><a href="../index.html" class="q-selected">Home</a></li>
+		<li class="q-menuitem"><a href="cpu.html" >CPU</a>
+			<ul class="sub">
+				<li><a href="mulcpu.html">Multi-CPU</a></li>
+				<li><a href="mcpu.html" >Mobile CPU</a></li>
+			</ul>
+		</li>
+		<li class="q-menuitem"><a href="gpu.html" >GPU</a>
+			<ul class="sub">
+				<li><a href="sli.html" >Multi-GPU</a></li>
+				<li><a href="mgpu.html" >Mobile GPU</a></li>
+			</ul>
+		</li>
+		<li class="q-menuitem"><a href="men.html" >RAM</a>
+		</li>
+		<li class="q-menuitem"><a href="hdd.html" >HDD/SSD</a>
+		</li></ul></div>
+		<div class="right-box"><ul class="q-navbox"><li class="q-navitem"><a href="market.html" >Market</a></li><li class="q-navitem"><a href="super.html">Supercomputer</a></li></ul>
+		</div>
+	
+</div>
+</div>
+<div id="qcenterBody">
+		<div class="left grid-75">
+			<div id="ent"></div>
+			<div id="MainContent">
+		<div class="tuboc">
+		<h2>CPU Market Share</h2>
+		<div>December 1, 2013 updated (in quarter)</div>
+    <div id="placeholder" style="width:680px;height:400px"></div>
+			<script language="javascript" type="text/javascript">					
+			var marketShare = [ {label: "Intel", data: [ [0,58.4], [1,58.2], [2,54.2], [3,57.3], [4,56.9], [5,57.2], [6,56.3], [7,54.2], [8,51.6], [9,59.3], [10,59.5], [11,62.3], [12,66.7], [13,66.4], [14,66.3], [15,67.9], [16,71.4], [17,71.7], [18,72.4], [19,72.7], [20,71.5], [21,71], [22,70.6], [23,72.2], [24,71.6], [25,72.3], [26,71.5], [27,70.4], [28,70.4], [29,73.1], [30,73.4], [31,72.2], [32,72.3], [33,73.4], [34,73.8], [35,70.8], [36,72.4], [37,73.6], [38,74.4], [39,75.1]] },{label: "AMD", data: [ [0,41.6], [1,41.6], [2,45.6], [3,42.7], [4,42.9], [5,42.8], [6,43.7], [7,45.7], [8,48.4], [9,40.7], [10,40.4], [11,37.6], [12,33.3], [13,33.6], [14,33.6], [15,31.8], [16,28.3], [17,28.3], [18,27.4], [19,27.2], [20,28.4], [21,28.8], [22,29.3], [23,27.7], [24,28.3], [25,27.7], [26,28.5], [27,29.6], [28,29.6], [29,26.9], [30,26.6], [31,27.8], [32,27.7], [33,26.5], [34,26.2], [35,29.2], [36,27.5], [37,26.4], [38,25.6], [39,24.9]] } ];
+var options = {
+  legend: { show: true, backgroundOpacity: 0.5 },
+  lines: { show: true },
+  points: {show: true, radius: 3 },
+  grid: { hoverable: true },
+  yaxis: { min: 0, max: 100, ticks: [ [0, "0%"], [20, "20%"], [40, "40%"], [60, "60%"], [80, "80%"], [100, "100%"] ]},
+  xaxis: { tickSize: 4, ticks: [ [0, "Q1 2004"], [1, ""], [2, ""], [3, ""], [4, "Q1 2005"], [5, ""], [6, ""], [7, ""], [8, "Q1 2006"], [9, ""], [10, ""], [11, ""], [12, "Q1 2007"], [13, ""], [14, ""], [15, ""], [16, "Q1 2008"], [17, ""], [18, ""], [19, ""], [20, "Q1 2009"], [21, ""], [22, ""], [23, ""], [24, "Q1 2010"], [25, ""], [26, ""], [27, ""], [28, "Q1 2011"], [29, ""], [30, ""], [31, ""], [32, "Q1 2012"], [33, ""], [34, ""], [35, ""], [36, "Q1 2013"], [37, ""], [38, ""], [39, ""]] }
+ };
+var tickLookUp = [ "Q1 2004", "Q2 2004", "Q3 2004", "Q4 2004", "Q1 2005", "Q2 2005", "Q3 2005", "Q4 2005", "Q1 2006", "Q2 2006", "Q3 2006", "Q4 2006", "Q1 2007", "Q2 2007", "Q3 2007", "Q4 2007", "Q1 2008", "Q2 2008", "Q3 2008", "Q4 2008", "Q1 2009", "Q2 2009", "Q3 2009", "Q4 2009", "Q1 2010", "Q2 2010", "Q3 2010", "Q4 2010", "Q1 2011", "Q2 2011", "Q3 2011", "Q4 2011", "Q1 2012", "Q2 2012", "Q3 2012", "Q4 2012", "Q1 2013", "Q2 2013", "Q3 2013", "Q3 2013"];			jQuery.noConflict();
+			jQuery(function() {
+				//var data = [ {label: chartLabel, data: dataArray/*, color: '#416b73'*/ } ];
+				var plotarea = jQuery("#placeholder");
+				jQuery.plot( plotarea, marketShare, options );
+			});
+			function showChartTooltip(x, y, contents) {
+				jQuery('<div id="charttooltip">' + contents + '</div>;').css( {
+				position: 'absolute',
+				display: 'none',
+				top: y + 5,
+				left: x + 5,
+				border: '1px solid #bfbfbf',
+				padding: '2px',
+				'background-color': '#ffffff',
+				opacity: 1
+				}).appendTo("body").fadeIn(200);
+			}
+			jQuery("#placeholder").bind("plothover", function (event, pos, item) {
+				jQuery("#x").text(pos.x.toFixed(2));
+				jQuery("#y").text(pos.y.toFixed(2));
+				if (item) {
+					jQuery("#charttooltip").remove();
+					var x = item.datapoint[0].toFixed(2),
+					y = item.datapoint[1].toFixed(2);					
+					//console.debug( item );
+					showChartTooltip(item.pageX, item.pageY, item.series.label + ", " + tickLookUp[item.dataIndex] + ", " + item.datapoint[1].toFixed(2) + "%" );
+				} else {
+					jQuery("#charttooltip").remove();
+				}
+				});
+		</script>     	  	
+		</div>
+		<div class="tuboc">
+		<h2>GPU Market Share</h2>
+		<div id="pieholder" style="margin-right: auto; margin-left: auto;width:600px;height:425px"></div>
+		<script language="javascript" type="text/javascript">					
+			
+			jQuery.noConflict();
+			jQuery(function() {				
+				
+				var pieData = [ { label: "AMD/ATI", color: "rgb(148, 182, 210)", data: 2969}, { label: "NVIDIA", color: "rgb(220, 177, 44)", data: 4455}, { label: "VIA", color: "rgb(4, 117, 116)", data: 0}, { label: "Intel", color: "rgb(117, 158, 0)", data: 1110}, { label: "其他", color: "rgb(181, 0, 0)", data: 19}];
+				var pieOptions = { 
+					series: { 
+						pie: { 
+							show: true,
+							radius: 1,
+							innerRadius: .5,
+							startAngle: .35,
+							tilt: 1,
+							stroke: {
+								width: 1
+							},
+							label: {
+								show: true,
+								radius: 3/4,
+								formatter: function(label, series){
+									return '<div style="font-family: Arial, Helvetica, sans-serif; font-size:8pt;text-align:center;padding:2px;color:black;">'+series.label+': '+(series.percent).toFixed(2)+'%</div>';
+                },
+								//background: { opacity: 0.5 },
+								threshold: 0.025
+							}
+						}
+					},
+					legend: {
+						show: true,
+						labelFormatter: function(label, series) {
+							return '<div style="font-family: Arial, Helvetica, sans-serif; font-size:8pt;text-align:left;padding:2px;color:black;">'+label+': '+(series.percent).toFixed(2)+'%</div>';
+						}
+					},
+					grid: {
+						hoverable: true
+					}
+				};
+				
+				var piearea = jQuery("#pieholder");
+				jQuery.plot( piearea, pieData, pieOptions );
+			});
+			
+			
+			function showChartTooltip(x, y, contents) {
+				jQuery('<div id="charttooltip">' + contents + '</div>;').css( {
+				position: 'absolute',
+				display: 'none',
+				top: y + 5,
+				left: x + 5,
+				border: '1px solid #bfbfbf',
+				padding: '2px',
+				'background-color': '#ffffff',
+				opacity: 1
+				}).appendTo("body").fadeIn(200);
+			}
+		  
+			jQuery("#pieholder").bind("plothover", function (event, pos, item) {
+				//console.debug( item );
+
+				if (item) {
+					jQuery("#charttooltip").remove();
+					showChartTooltip(pos.pageX, pos.pageY, item.series.label + ": " + item.datapoint[1][0][1] + " Units");
+				} else {
+					jQuery("#charttooltip").remove();
+				}
+
+				});
+							
+		 </script>
+			</div>
+		<div class="tuboc">
+		<h2>HDD/SSD Market Share</h2>
+		 <div id="pieholder2" style="margin-right: auto; margin-left: auto;width:600px;height:425px"></div>
+		 <script language="javascript" type="text/javascript">					
+			jQuery.noConflict();
+			jQuery(function() {				
+				
+				var pieData = [ { label: "Corsair",  color: "rgb(148, 182, 210)", data: 288}, { label: "Kingston", color: "rgb(220, 177, 44)", data: 233}, { label: "OCZ", color: "rgb(117, 158, 0)", data: 941}, { label: "Samsung", color: "rgb(203, 128, 92)", data: 937}, { label: "Western Digital", color: "rgb(4, 117, 116)", data: 2054}, { label: "Intel", color: "rgb(22, 69, 80)", data: 449}, { label: "Toshiba", data: 324}, { label: "Hitachi", data: 793}, { label: "Seagate", data: 1969}, { label: "Other", color: "rgb(181, 0, 0)", data: 1397}];
+				var pieOptions = { 
+					series: { 
+						pie: { 
+							show: true,
+							radius: 1,
+							innerRadius: .5,
+							startAngle: .35,
+							tilt: 1,
+							stroke: {
+								width: 1
+							},
+							label: {
+								show: true,
+								radius: 3/4,
+								formatter: function(label, series){
+									return '<div style="font-family: Arial, Helvetica, sans-serif; font-size:8pt;text-align:center;padding:2px;color:black;">'+series.label+': '+(series.percent).toFixed(2)+'%</div>';
+                },
+								//background: { opacity: 0.5 },
+								threshold: 0.025
+							}
+						}
+					},
+					legend: {
+						show: true,
+						backgroundOpacity: 0,
+						labelFormatter: function(label, series) {
+							return '<div style="font-family: Arial, Helvetica, sans-serif; font-size:8pt;text-align:left;padding:2px;color:black;">'+label+': '+(series.percent).toFixed(2)+'%</div>';
+						}
+					},
+					grid: {
+						hoverable: true
+					}
+				};
+				
+				var piearea = jQuery("#pieholder2");
+				jQuery.plot( piearea, pieData, pieOptions );
+			});
+			
+			
+			function showChartTooltip(x, y, contents) {
+				jQuery('<div id="charttooltip">' + contents + '</div>;').css( {
+				position: 'absolute',
+				display: 'none',
+				top: y + 5,
+				left: x + 5,
+				border: '1px solid #bfbfbf',
+				padding: '2px',
+				'background-color': '#ffffff',
+				opacity: 1
+				}).appendTo("body").fadeIn(200);
+			}
+		  
+			jQuery("#pieholder").bind("plothover", function (event, pos, item) {
+				//console.debug( item );
+
+				if (item) {
+					jQuery("#charttooltip").remove();
+					showChartTooltip(pos.pageX, pos.pageY, item.series.label + ": " + item.datapoint[1][0][1] + " Units");
+				} else {
+					jQuery("#charttooltip").remove();
+				}
+
+				});
+		 </script>     
+			</div>
+		
+		</div>
+		</div>
+		<div class="grid-23 right">
+				<div class="mod-side-wraper">
+		<div class="side-item">
+			<div class="desc-box clearfix"><a href="#">Current Rankings</a></div>
+		</div>
+		<div class="side-item ranklist">
+			<ul class="list">	
+			<li><a href="cpu.html">Single CPU Performance</a></li>
+			<li><a href="mulcpu.html">Multi-CPU Performance</a></li>
+			<li><a href="mcpu.html">Mobile CPU Performance</a></li>
+			<li><a href="gpu.html">Desktop GPU Performance</a></li>
+			<li><a href="sli.html">Multi-GPU Performance</a></li>
+			<li><a href="mgpu.html">Mobile GPU Performance</a></li>
+			<li><a href="men.html">RAM Performance</a></li>
+			<li><a href="hdd.html">HDD/SSD Performance</a></li>
+			<li><a href="mac.html">Apple Mac Performance</a></li>
+			<li><a href="apple.html">Apple iOS Performance</a></li>
+			<li><a href="camera.html">Phone Camera Performance</a></li>
+			</ul>
+		</div>
+	</div>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+<div class="mod-footer">
+	<div class="footer-box">
+		<div class="copy-box">2016-2017&nbsp;CPU Rankings&nbsp;Powered by cpupk.com</div>
+	</div>
+</div>
+
+
+</body>
+</html>
