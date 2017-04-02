@@ -1,0 +1,1 @@
+$(function(){$("table#infotable").stupidtable();$("table#infotable tr:even").addClass("oddtr");$("table#infotable tr").hover(function(){$(this).addClass("hover")},function(){$(this).removeClass("hover")})});
