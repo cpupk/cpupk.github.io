@@ -1,0 +1,138 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Eclipse Class Decompiler</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Eclipse Class Decompiler</h1>
+    </header>
+    <div id="container">
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/cnfree/Eclipse-Class-Decompiler/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/cnfree/Eclipse-Class-Decompiler/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/cnfree/Eclipse-Class-Decompiler" class="code">View Eclipse Class Decompiler on GitHub</a>
+        </div>
+        <span class="blc"></span>
+        </div>
+        <article class="markdown-body">
+          <p><strong>Eclipse Class Decompiler</strong> integrates <strong>JD</strong>, <strong>Jad</strong>, <strong>FernFlower</strong>, <strong>CFR</strong>, <strong>Procyon</strong> seamlessly with Eclipse and allows Java developers to <strong>debug class files without source code directly</strong>. It also integrates <b>Javadoc</b> and supports  the syntax of JDK8 <b>lambda</b> expressions.</p>
+
+<p align="center"><img src="images/o_debug_class.png"></p>
+
+<ul>
+<li>Eclipse Marketplace Page: <a href="https://marketplace.eclipse.org/content/eclipse-class-decompiler">https://marketplace.eclipse.org/content/eclipse-class-decompiler</a>
+</li>
+<li>Plugin Update Site: <a href="http://www.cpupk.com/decompiler/update">http://www.cpupk.com/decompiler/update</a>
+</li>
+<li>Github Project Page: <a href="https://github.com/cnfree/Eclipse-Class-Decompiler">https://github.com/cnfree/Eclipse-Class-Decompiler</a>
+</li>
+</ul>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+
+<p>Eclipse Class Decompiler is a plug-in for the Eclipse platform. It integrates JD, Jad, FernFlower, CFR, Procyon seamlessly with Eclipse, 
+allows you to display all the Java sources during your debugging process, even if you do not have them all, 
+and you can debug these class files without source code directly. It also integrates Javadoc and supports the syntax of JDK8 lambda expressions.</p>
+
+<h2>
+<a id="how-to-install-eclipse-class-decompiler-" class="anchor" href="#how-to-install-eclipse-class-decompiler-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to install Eclipse Class Decompiler ?</h2>
+
+<h4>
+<a id="first-way" class="anchor" href="#first-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First way</h4>
+
+<ol>
+<li>Launch <em>Eclipse</em>,</li>
+<li style="position: relative;">Drag the following install button to eclipse toolbar, <a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=472922"><img style="position: absolute;top: -6px;left: 330px" src="images/btn-install.png" title="Drag to your running Eclipse workspace to install Eclipse Class Decompiler"></a>
+</li>
+<li>Check <em>"Eclipse Class Decompiler"</em>,</li>
+<li>Next, next, next... and restart.</li>
+</ol>
+
+<h4>
+<a id="second-way" class="anchor" href="#second-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Second way</h4>
+
+<ol>
+<li>Launch <em>Eclipse</em>,</li>
+<li>Click on <em>"Help &gt; Eclipse Marketplace..."</em>,</li>
+<li>Search <em>"Eclipse Class Decompiler"</em> in the Eclipse marketplace dialog,</li>
+<li>Find <em>"Eclipse Class Decompiler"</em> and click on button <em>"install"</em>,</li>
+<li>Check <em>"Eclipse Class Decompiler"</em>,</li>
+<li>Next, next, next... and restart.</li>
+</ol>
+
+<h4>
+<a id="third-way" class="anchor" href="#third-way" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Third way</h4>
+
+<ol>
+<li>Launch <em>Eclipse</em>,</li>
+<li>Click on <em>"Help &gt; Install New Software..."</em>,</li>
+<li>Click on button <em>"Add..."</em> to add an new repository,</li>
+<li>Enter name as <em>"Eclipse Class Decompiler Update Site"</em> and enter location as <em>"<a href="http://decompiler.cpupk.com/update">http://decompiler.cpupk.com/update</a>"</em>, then click on button <em>"OK"</em>,</li>
+<li>Check <em>"Eclipse Class Decompiler"</em>,</li>
+<li>Next, next, next... and restart.</li>
+</ol>
+
+<h2>
+<a id="how-to-check-the-file-associations-" class="anchor" href="#how-to-check-the-file-associations-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to check the file associations ?</h2>
+
+<p>Click on <em>"Window &gt; Preferences &gt; General &gt; Editors &gt; File Associations"</em></p>
+
+<ul>
+<li>
+<em>"*.class"</em> : <em>"Class Decompiler Viewer"</em> is selected by default.</li>
+<li>
+<em>"*.class without source"</em> : <em>"Class Decompiler Viewer"</em> is selected by default.</li>
+</ul>
+
+<h2>
+<a id="how-to-configure-eclipse-class-decompiler-" class="anchor" href="#how-to-configure-eclipse-class-decompiler-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to configure Eclipse Class Decompiler ?</h2>
+
+<p>Click on <em>"Window &gt; Preferences &gt; Java &gt; Decompiler"</em></p>
+
+<h2>
+<a id="how-to-uninstall-eclipse-class-decompiler-" class="anchor" href="#how-to-uninstall-eclipse-class-decompiler-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to uninstall Eclipse Class Decompiler ?</h2>
+
+<ol>
+<li>Click on <em>"Help &gt; About Eclipse &gt; Installation Details &gt; Installation Software"</em>,</li>
+<li>Select <em>"Eclipse Class Decompiler"</em>,</li>
+<li>Click on <em>"Uninstall..."</em>.</li>
+</ol>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/cnfree" class="avatar"><img src="images/1320575.png" width="48" height="48"></a> <a href="http://www.cpupk.com">Chen Chao</a> maintains <a href="https://github.com/cnfree/Eclipse-Class-Decompiler">Eclipse Class Decompiler</a></p>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/cnfree/Eclipse-Class-Decompiler/tarball/master" class="tar">tar</a><a href="https://github.com/cnfree/Eclipse-Class-Decompiler/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
