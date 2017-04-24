@@ -1,0 +1,33 @@
+<html>
+<head>
+<style type="text/css">
+.html-body-overflow {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+</style>
+<script src="http://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document.body).toggleClass("html-body-overflow");
+	$(document.body).toggleClass("html-body-overflow");
+
+	function getContentArea() {
+		return [ $("#link").innerWidth(), $("#link").innerHeight() ];
+	}
+</script>
+</head>
+<body onContextMenu="return false;" onSelectStart="return false;">
+	<a id="link" style="font-size: 10pt; text-decoration: none;"
+		target="_blank"
+		href="https://www.amazon.com/gp/search?ie=UTF8&tag=cpupk-20&linkCode=ur2&linkId=ca0bfcf6495abb729cabf596f75bbb1b&camp=1789&creative=9325&index=books&keywords=Java%20Architecture%20Book">Buy
+		Java Architecture Book</a>
+	<img src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&l=ur2&o=1"
+		width="1" height="1" border="0" alt=""
+		style="border: none !important; margin: 0px !important;" />
+</body>
+</html>
