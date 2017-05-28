@@ -18,7 +18,7 @@
 		target="_blank"
 		href="https://www.amazon.com/gp/search?ie=UTF8&tag=cpupk-20&linkCode=ur2&linkId=ca0bfcf6495abb729cabf596f75bbb1b&camp=1789&creative=9325&index=books&keywords=Java%20Architecture%20Book"><img src="images/book.gif"
 		border="0" alt=""
-		style="position:relative;top:1px; border: none !important; margin: 0px !important;" /> <span style="position:relative;top:-3px; border: none !important; margin: 0px !important;">Java Bookstore</span></a>
+		style="position:relative;top:1px; border: none !important; margin: 0px !important;" /> <span id="label" style="position:relative;top:-3px; border: none !important; margin: 0px !important;">Java Bookstore</span></a>
 	<img src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&l=ur2&o=1"
 		width="1" height="1" border="0" alt=""
 		style="border: none !important; margin: 0px !important;" />
@@ -29,7 +29,7 @@
 	$(document.body).toggleClass("html-body-overflow");
 
 	function getContentArea() {
-		return [ $("#link").outerWidth(), $("#link").outerHeight() ];
+		return [ $("#link").outerWidth(), $("#label").outerHeight() ];
 	}
 </script>
 </html>
