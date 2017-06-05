@@ -80,6 +80,7 @@
 	$(document.body).toggleClass("html-body-overflow");
 	function getContentArea() {
 		var index = Math.abs(parseInt(o.style.marginTop)) / $(".tp").outerHeight();
+		alert([ $("#link" + index).outerWidth(), $("a").outerHeight() ]);
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
 	}
 
