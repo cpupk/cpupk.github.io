@@ -91,7 +91,6 @@
 		function start() {
 			t = setInterval(scrolling, speed);
 			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
-			resize();
 		}
 
 		function scrolling() {
@@ -112,6 +111,8 @@
 	}
 
 	startmarquee(20, 60000);
+	
+	resize();
 
 	function getContentArea() {
 		var index = Math.abs(parseInt(o.style.marginTop))
