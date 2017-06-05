@@ -36,7 +36,8 @@
 					target=_blank><IMG
 					style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: 1px"
 					border=0 alt="" src="http://www.cpupk.com/images/book.gif"> <SPAN
-					style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">iPhone Store</SPAN></A> <IMG
+					style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">iPhone
+						Store</SPAN></A> <IMG
 					style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px"
 					border=0 alt=""
 					src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&amp;l=ur2&amp;o=1"
@@ -78,7 +79,7 @@
 
 <script type="text/javascript">
 	$(document.body).toggleClass("html-body-overflow");
-	
+
 	$("#marqueebox").append($("#marqueebox").html());
 	$("#marqueebox").css("margin-top", "0px");
 
@@ -91,14 +92,14 @@
 		function start() {
 			t = setInterval(scrolling, speed);
 			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
-			flag = true;
+
 			resize();
 		}
 
 		function scrolling() {
 			var sh = $("#marqueebox").outerHeight();
 			o.style.height = sh;
-			var lh =  $(".tp").outerHeight();
+			var lh = $(".tp").outerHeight();
 			if (parseInt(o.style.marginTop) % lh != 0) {
 				o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2))
@@ -112,15 +113,17 @@
 		setTimeout(start, delay);
 	}
 
-	resize();
-	
 	startmarquee(20, 60000);
-	
+
+	flag = true;
+	resize();
+
 	function getContentArea() {
-		if(!flag){
-			return [0,0];
+		if (!flag) {
+			return [ 0, 0 ];
 		}
-		var index = Math.abs(parseInt(o.style.marginTop)) / $(".tp").outerHeight();
+		var index = Math.abs(parseInt(o.style.marginTop))
+				/ $(".tp").outerHeight();
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
 	}
 </script>
