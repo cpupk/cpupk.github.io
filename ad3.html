@@ -1,0 +1,72 @@
+<html> 
+<head> 
+<style type="text/css">
+.html-body-overflow {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head> 
+<body> 
+<div style="overflow: hidden; margin-left: 0px; margin-top: 0px;"> 
+    <div id="marqueebox" style=" margin-left: 0px; margin-top: 0px;"> 
+        <div class="tp"><A id="link1" style="FONT-SIZE: 9pt; TEXT-DECORATION: none; FONT-FAMILY: Microsoft YaHei UI" href="https://www.amazon.com/gp/search?ie=UTF8&amp;tag=cpupk-20&amp;linkCode=ur2&amp;linkId=ca0bfcf6495abb729cabf596f75bbb1b&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=Java%20Architecture%20Book" target=_blank><IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: 1px" border=0 alt="" src="http://www.cpupk.com/images/book.gif"> <SPAN style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">Java Bookstore1</SPAN></A> <IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px" border=0 alt="" src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&amp;l=ur2&amp;o=1" width=1 height=1></div> 
+        <div class="tp"><A id="link2" style="FONT-SIZE: 9pt; TEXT-DECORATION: none; FONT-FAMILY: Microsoft YaHei UI" href="https://www.amazon.com/gp/search?ie=UTF8&amp;tag=cpupk-20&amp;linkCode=ur2&amp;linkId=ca0bfcf6495abb729cabf596f75bbb1b&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=Java%20Architecture%20Book" target=_blank><IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: 1px" border=0 alt="" src="http://www.cpupk.com/images/book.gif"> <SPAN style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">Java Bookstore2</SPAN></A> <IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px" border=0 alt="" src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&amp;l=ur2&amp;o=1" width=1 height=1></div> 
+        <div class="tp"><A id="link3" style="FONT-SIZE: 9pt; TEXT-DECORATION: none; FONT-FAMILY: Microsoft YaHei UI" href="https://www.amazon.com/gp/search?ie=UTF8&amp;tag=cpupk-20&amp;linkCode=ur2&amp;linkId=ca0bfcf6495abb729cabf596f75bbb1b&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=Java%20Architecture%20Book" target=_blank><IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: 1px" border=0 alt="" src="http://www.cpupk.com/images/book.gif"> <SPAN style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">Java Bookstore3</SPAN></A> <IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px" border=0 alt="" src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&amp;l=ur2&amp;o=1" width=1 height=1></div> 
+        <div class="tp"><A id="link4" style="FONT-SIZE: 9pt; TEXT-DECORATION: none; FONT-FAMILY: Microsoft YaHei UI" href="https://www.amazon.com/gp/search?ie=UTF8&amp;tag=cpupk-20&amp;linkCode=ur2&amp;linkId=ca0bfcf6495abb729cabf596f75bbb1b&amp;camp=1789&amp;creative=9325&amp;index=books&amp;keywords=Java%20Architecture%20Book" target=_blank><IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: 1px" border=0 alt="" src="http://www.cpupk.com/images/book.gif"> <SPAN style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; POSITION: relative; BORDER-LEFT: medium none; MARGIN: 0px; TOP: -3px">Java Bookstore4</SPAN></A> <IMG style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN: 0px" border=0 alt="" src="//ir-na.amazon-adsystem.com/e/ir?t=cpupk-20&amp;l=ur2&amp;o=1" width=1 height=1></div> 
+    </div> 
+</div> 
+</body> 
+
+<SCRIPT src="http://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+	$(document.body).toggleClass("html-body-overflow");
+	$(document.body).toggleClass("html-body-overflow");
+
+	function getContentArea() {
+		return [ $("#marqueebox").outerWidth(), $("#link1").outerHeight() ];
+	}
+</SCRIPT>
+<script type="text/javascript">
+
+ var o=document.getElementById("marqueebox"); 
+    o.innerHTML+=o.innerHTML; 
+    o.style.marginTop=0; 
+    o.onmouseover=function(){p=true;} 
+    o.onmouseout=function(){p=false;} 
+
+function startmarquee(lh,speed,delay) { 
+    var p=false; 
+    var t; 
+    var sh; 
+  
+    function start(){ 
+        sh = $("#marqueebox").outerHeight(); 
+        o.style.height = sh; 
+        t=setInterval(scrolling,speed); 
+        if(!p) o.style.marginTop=parseInt(o.style.marginTop)-1+"px"; 
+    } 
+
+    function scrolling(){ 
+        if(parseInt(o.style.marginTop)%lh!=0){ 
+            o.style.marginTop=parseInt(o.style.marginTop)-1+"px"; 
+			console.log(o.style.marginTop);
+			console.log(sh);
+            if(Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh/2)) o.style.marginTop=0; 
+        }else{ 
+            clearInterval(t); 
+            setTimeout(start,delay); 
+        } 
+    } 
+    setTimeout(start,delay); 
+} 
+
+startmarquee($(".tp").outerHeight(),20,3000);
+</script> 
+</html>
