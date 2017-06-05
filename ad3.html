@@ -11,7 +11,6 @@
 	padding: 0;
 }
 </style>
-<SCRIPT src="js/jquery.min.js"></SCRIPT>
 </head>
 <body>
 	<div style="overflow: hidden; margin-left: 0px; margin-top: 0px;">
@@ -74,6 +73,9 @@
 		</div>
 	</div>
 </body>
+
+<SCRIPT src="http://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></SCRIPT>
+
 <script type="text/javascript">
 	$(document.body).toggleClass("html-body-overflow");
 	function getContentArea() {
@@ -91,7 +93,7 @@
 
 		function start() {
 			t = setInterval(scrolling, speed);
-			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";	
+			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 		}
 
 		function scrolling() {
@@ -110,9 +112,7 @@
 		}
 		setTimeout(start, delay);
 	}
-	
-	resize();
-	
+
 	startmarquee(20, 3000);
 </script>
 </html>
