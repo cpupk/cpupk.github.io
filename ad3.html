@@ -93,7 +93,6 @@
 		var t;
 
 		function start() {
-			$("#marqueebox").show();
 			t = setInterval(scrolling, speed);
 			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";	
 		}
@@ -115,6 +114,8 @@
 		setTimeout(start, delay);
 	}
 
+	resize();
+	$("#marqueebox").show();
 	startmarquee(20, 3000);
 </script>
 </html>
