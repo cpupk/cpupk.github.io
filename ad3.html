@@ -78,7 +78,6 @@
 
 <script type="text/javascript">
 	$(document.body).toggleClass("html-body-overflow");
-	var itemHeight = $(".tp").outerHeight();
 	function getContentArea() {
 		var index = Math.abs(parseInt(o.style.marginTop)) / itemHeight;
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
@@ -89,18 +88,18 @@
 
 	var o = document.getElementById("marqueebox");
 
-	function startmarquee(lh, speed, delay) {
+	function startmarquee(speed, delay) {
 		var t;
-		var sh;
 
 		function start() {
-			sh = $("#marqueebox").outerHeight();
-			o.style.height = sh;
 			t = setInterval(scrolling, speed);
 			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 		}
 
 		function scrolling() {
+			var sh = $("#marqueebox").outerHeight();
+			o.style.height = sh;
+			var lh =  $(".tp").outerHeight();
 			if (parseInt(o.style.marginTop) % lh != 0) {
 				o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2))
@@ -114,6 +113,6 @@
 		setTimeout(start, delay);
 	}
 
-	startmarquee(itemHeight, 20, 3000);
+	startmarquee(20, 3000);
 </script>
 </html>
