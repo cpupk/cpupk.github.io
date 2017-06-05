@@ -79,7 +79,7 @@
 <script type="text/javascript">
 	$(document.body).toggleClass("html-body-overflow");
 	function getContentArea() {
-		var index = Math.abs(parseInt(o.style.marginTop)) / itemHeight;
+		var index = Math.abs(parseInt(o.style.marginTop)) / $(".tp").outerHeight();
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
 	}
 
