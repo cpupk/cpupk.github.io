@@ -80,7 +80,7 @@
 	$(document.body).toggleClass("html-body-overflow");
 	var itemHeight = $(".tp").outerHeight();
 	function getContentArea() {
-		var index = Math.abs(parseInt(o.style.marginTop)) % itemHeight;
+		var index = Math.abs(parseInt(o.style.marginTop)) / itemHeight;
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
 	}
 
@@ -115,6 +115,5 @@
 	}
 
 	startmarquee(itemHeight, 20, 3000);
-	alert(getContentArea());
 </script>
 </html>
