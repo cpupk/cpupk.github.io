@@ -92,7 +92,6 @@
 		function start() {
 			t = setInterval(scrolling, speed);
 			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
-
 			resize();
 		}
 
@@ -114,9 +113,6 @@
 	}
 
 	startmarquee(20, 60000);
-
-	flag = true;
-	resize();
 
 	function getContentArea() {
 		if (!flag) {
