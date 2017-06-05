@@ -84,7 +84,6 @@
 	$("#marqueebox").css("margin-top", "0px");
 
 	var o = document.getElementById("marqueebox");
-	var flag = false;
 
 	function startmarquee(speed, delay) {
 		var t;
@@ -115,9 +114,6 @@
 	startmarquee(20, 60000);
 
 	function getContentArea() {
-		if (!flag) {
-			return [ 0, 0 ];
-		}
 		var index = Math.abs(parseInt(o.style.marginTop))
 				/ $(".tp").outerHeight();
 		return [ $("#link" + index).outerWidth(), $("a").outerHeight() ];
