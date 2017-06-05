@@ -75,7 +75,6 @@
 	</div>
 </body>
 <script type="text/javascript">
-	$("#marqueebox").hide();
 	$(document.body).toggleClass("html-body-overflow");
 	function getContentArea() {
 		var index = Math.abs(parseInt(o.style.marginTop)) / $(".tp").outerHeight();
@@ -111,12 +110,9 @@
 		}
 		setTimeout(start, delay);
 	}
-
-	alert(getContentArea());
+	
 	resize();
-
-	alert(getContentArea());
-	$("#marqueebox").show();
+	
 	startmarquee(20, 3000);
 </script>
 </html>
