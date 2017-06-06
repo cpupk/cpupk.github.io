@@ -99,8 +99,9 @@
 			var lh = $(".tp").outerHeight();
 			if (parseInt(o.style.marginTop) % lh != 0) {
 				o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
-				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2))
-					o.style.marginTop = 0;
+				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2)){
+					$("#marqueebox").css("margin-top", "-1px");
+				}
 			} else {
 				clearInterval(t);
 				resize();
