@@ -90,7 +90,7 @@
 
 		function start() {
 			t = setInterval(scrolling, speed);
-			o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
+			o.style.marginTop = (parseInt(o.style.marginTop) - 1) + "px";
 		}
 
 		function scrolling() {
@@ -100,7 +100,7 @@
 			if (parseInt(o.style.marginTop) % lh != 0) {
 				o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2)){
-					$("#marqueebox").css("margin-top", "-1px");
+					o.style.marginTop = "-1px";
 				}
 			} else {
 				clearInterval(t);
