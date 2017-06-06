@@ -100,7 +100,8 @@
 			if (parseInt(o.style.marginTop) % lh != 0) {
 				o.style.marginTop = parseInt(o.style.marginTop) - 1 + "px";
 				if (Math.abs(parseInt(o.style.marginTop)) == Math.floor(sh / 2)){
-					o.style.marginTop = "-1px";
+					$("#marqueebox").css("margin-top", "0px");
+					resize();
 				}
 			} else {
 				clearInterval(t);
