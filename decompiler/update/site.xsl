@@ -1,3 +1,4 @@
+
 <xsl:stylesheet version='1.0'
 	xmlns:xsl='http://www.w3.org/1999/XSL/Transform' xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 	<xsl:output method="html" encoding="UTF-8" />
@@ -13,6 +14,7 @@
 					<h1 class="title">Eclipse Class Decompiler Project Update</h1>
 					<p class="bodyText">
 						<xsl:value-of select="description" />
+						<a href="http://www.cpupk.com/decompiler">Eclipse Class Decompiler</a> plugin, Copyright (c) 2017 Chen Chao.
 						Any question, please mail to
 						<a href="mailto:cnfree2000@hotmail.com">Chen Chao(cnfree2000@hotmail.com)</a>
 						. More details, please visit 
